@@ -1,0 +1,29 @@
+  
+<div class="col s12">
+	<div align="center">
+	<a href="" >
+		<div style="font-family: 'Indie Flower', cursive; color: black" class="title">
+			UnVice News
+		</div>
+	</a>
+	</div>
+</div>
+<div class="container">
+   <div  *ngFor="let article of items | async" align="center" >
+   <div class="row"  >
+        <div class="col s12"><a [href]= "'/article/' + article.rank">
+          <img style="max-width: 100%;
+          height: auto;
+          width: auto;" [src]="article.url"></a>
+        
+
+     <div class="container">
+      	<p align="left" style="font-family: 'Bungee Inline', cursive;
+">By, Imaginary Morton.</p><br>
+      	<p style="font-size: 16px;font-family: 'Josefin Sans', sans-serif;" align="center">{{article.text}}</p>
+      </div>
+        
+	  </div>
+	</div>
+   </div>
+</div>

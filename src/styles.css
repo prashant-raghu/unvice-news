@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+.drp {
+    height: 70vw !important;
+    width: 100vw !important;
+}
